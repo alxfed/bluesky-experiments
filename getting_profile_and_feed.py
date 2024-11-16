@@ -5,7 +5,7 @@
 This source code is licensed under the license found in the
 LICENSE file in the root directory of this source tree.
 """
-from atproto import Client, client_utils
+from atproto import Client, client_utils, models
 from os import getenv
 
 

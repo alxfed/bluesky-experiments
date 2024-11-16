@@ -21,6 +21,8 @@ def main():
     text = client_utils.TextBuilder().text("Example thread. This is the initial post.")
     post = client.send_post(text)
 
+    resp_model =models.utils.get_response_model(response=post)
+
     parent = models.create_strong_ref(post)
     root = models.create_strong_ref(post)
 
